@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somewhere Else</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="somewhere-else-page">
+    <!-- Navigation Bar  -->
+    <header>
+        <div class="logo">naliesy</div>
+        <nav class="navbar">
+            <a href="index.html">home</a>
+            <a href="work.html">work</a>
+            <a href="connect.html" class="active">connect</a>
+            <a href="artist.html">artist</a>
+            <a href="somewhere_else.html" class="active">somewhere else...</a>
+        </nav>
+        <a href="shop.html" class="shop-btn">shop</a>
+    </header>
+    
+
+    <h1 id="welcomeText">You have arrived. But have you been here before?</h1>
+    <p class="floating-text" id="crypticText">Somewhere Else is closer than you think.</p>
+    
+    <button class="interaction" id="startBtn">Continue</button>
+
+    <div class="chat-container" id="chatContainer">
+        <div class="chat-box">
+            <p><strong>System:</strong> "Describe your future in one word."</p>
+            <input type="text" id="userInput" placeholder="Type here..." oninput="autoCompleteText()">
+            <button onclick="generateResponse()">Submit</button>
+            <p id="responseText"></p>
+        </div>
+    </div>
+
+    <button class="exit-btn" id="exitBtn" onclick="attemptExit()">Leave</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
